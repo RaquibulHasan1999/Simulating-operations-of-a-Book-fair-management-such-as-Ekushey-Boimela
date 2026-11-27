@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="500.0" prefWidth="760.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1"
+            fx:controller="com.cse213project.bookfair.Raquibul.controller.ManagerFinancialAnalyticsController">
+    <children>
+        <Label layoutX="20.0" layoutY="15.0" text="Goal 7: View Daily Stall Financial Analytics &amp; Sales Performance" />
+
+        <Label layoutX="20.0" layoutY="55.0" text="From Date:" />
+        <DatePicker fx:id="fromDatePicker" layoutX="95.0" layoutY="51.0" prefWidth="140.0" />
+        <Label layoutX="250.0" layoutY="55.0" text="To Date:" />
+        <DatePicker fx:id="toDatePicker" layoutX="310.0" layoutY="51.0" prefWidth="140.0" />
+        <Button layoutX="465.0" layoutY="51.0" prefWidth="150.0" onAction="#generateAnalyticsButtonOnAction" text="Generate Summary" />
+        <Button layoutX="630.0" layoutY="51.0" prefWidth="110.0" onAction="#backButtonOnAction" text="Back" />
+
+        <Label fx:id="summaryOutputLabel" layoutX="20.0" layoutY="95.0" prefWidth="720.0" text="" />
+
+        <TableView fx:id="summaryTableView" layoutX="20.0" layoutY="130.0" prefHeight="295.0" prefWidth="720.0">
+            <columns>
+                <TableColumn fx:id="sumIdCol" prefWidth="95.0" text="Summary ID" />
+                <TableColumn fx:id="fromCol" prefWidth="105.0" text="From Date" />
+                <TableColumn fx:id="toCol" prefWidth="105.0" text="To Date" />
+                <TableColumn fx:id="counterCol" prefWidth="140.0" text="Counter Sales" />
+                <TableColumn fx:id="preOrderCol" prefWidth="145.0" text="Pre-Order Sales" />
+                <TableColumn fx:id="unitsCol" prefWidth="125.0" text="Units Sold" />
+            </columns>
+        </TableView>
+
+        <Button layoutX="20.0" layoutY="440.0" prefWidth="200.0" onAction="#exportSummaryButtonOnAction" text="Preview Export Summary" />
+    </children>
+</AnchorPane>
