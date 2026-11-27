@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="540.0" prefWidth="760.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1"
+            fx:controller="com.cse213project.bookfair.Raquibul.controller.ManagerUpdateInventoryController">
+    <children>
+        <Label layoutX="20.0" layoutY="15.0" text="Goal 2: Update Daily Inventory &amp; Book Catalog" />
+
+        <Label layoutX="20.0" layoutY="50.0" text="ISBN:" />
+        <TextField fx:id="isbnTextField" layoutX="65.0" layoutY="46.0" prefWidth="130.0" />
+        <Label layoutX="210.0" layoutY="50.0" text="Title:" />
+        <TextField fx:id="titleTextField" layoutX="250.0" layoutY="46.0" prefWidth="200.0" />
+        <Label layoutX="465.0" layoutY="50.0" text="Author:" />
+        <TextField fx:id="authorTextField" layoutX="520.0" layoutY="46.0" prefWidth="220.0" />
+
+        <Label layoutX="20.0" layoutY="90.0" text="Category:" />
+        <TextField fx:id="categoryTextField" layoutX="85.0" layoutY="86.0" prefWidth="130.0" />
+        <Label layoutX="230.0" layoutY="90.0" text="Price (BDT):" />
+        <TextField fx:id="priceTextField" layoutX="310.0" layoutY="86.0" prefWidth="100.0" />
+        <Label layoutX="430.0" layoutY="90.0" text="Qty / Change (+/-):" />
+        <TextField fx:id="qtyChangeTextField" layoutX="545.0" layoutY="86.0" prefWidth="90.0" />
+
+        <Button layoutX="20.0" layoutY="130.0" prefWidth="170.0" onAction="#addNewBookButtonOnAction" text="Add New Book Title" />
+        <Button layoutX="205.0" layoutY="130.0" prefWidth="180.0" onAction="#updateStockButtonOnAction" text="Update Existing Stock" />
+        <Button layoutX="640.0" layoutY="130.0" prefWidth="100.0" onAction="#backButtonOnAction" text="Back" />
+
+        <Label fx:id="statusLabel" layoutX="20.0" layoutY="170.0" prefWidth="720.0" text="" />
+
+        <TableView fx:id="inventoryTableView" layoutX="20.0" layoutY="200.0" prefHeight="315.0" prefWidth="720.0">
+            <columns>
+                <TableColumn fx:id="stallCol" prefWidth="110.0" text="Stall No" />
+                <TableColumn fx:id="isbnCol" prefWidth="180.0" text="ISBN" />
+                <TableColumn fx:id="availCol" prefWidth="140.0" text="Available Qty" />
+                <TableColumn fx:id="soldCol" prefWidth="140.0" text="Sold Qty" />
+                <TableColumn fx:id="reorderCol" prefWidth="145.0" text="Reorder Level" />
+            </columns>
+        </TableView>
+    </children>
+</AnchorPane>
