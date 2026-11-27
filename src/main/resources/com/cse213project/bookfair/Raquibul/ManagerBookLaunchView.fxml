@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="520.0" prefWidth="760.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1"
+            fx:controller="com.cse213project.bookfair.Raquibul.controller.ManagerBookLaunchController">
+    <children>
+        <Label layoutX="20.0" layoutY="15.0" text="Goal 6: Organize New Book Launch Event (Operational Dates: Feb 1 - Feb 28, 2026)" />
+
+        <Label layoutX="20.0" layoutY="55.0" text="Book Title:" />
+        <TextField fx:id="bookTitleTextField" layoutX="95.0" layoutY="51.0" prefWidth="240.0" />
+        <Label layoutX="355.0" layoutY="55.0" text="Author / Guests:" />
+        <TextField fx:id="guestAuthorTextField" layoutX="460.0" layoutY="51.0" prefWidth="280.0" />
+
+        <Label layoutX="20.0" layoutY="95.0" text="Date:" />
+        <DatePicker fx:id="preferredDatePicker" layoutX="65.0" layoutY="91.0" prefWidth="155.0" />
+        <Label layoutX="240.0" layoutY="95.0" text="Time Slot:" />
+        <ComboBox fx:id="timeSlotComboBox" layoutX="310.0" layoutY="91.0" prefWidth="175.0" />
+        <Button layoutX="500.0" layoutY="91.0" prefWidth="135.0" onAction="#submitLaunchRequestButtonOnAction" text="Submit Booking" />
+        <Button layoutX="645.0" layoutY="91.0" prefWidth="95.0" onAction="#backButtonOnAction" text="Back" />
+
+        <Label fx:id="statusLabel" layoutX="20.0" layoutY="135.0" prefWidth="720.0" text="" />
+
+        <TableView fx:id="launchTableView" layoutX="20.0" layoutY="165.0" prefHeight="330.0" prefWidth="720.0">
+            <columns>
+                <TableColumn fx:id="reqIdCol" prefWidth="95.0" text="Req ID" />
+                <TableColumn fx:id="titleCol" prefWidth="250.0" text="Book &amp; Guests" />
+                <TableColumn fx:id="dateCol" prefWidth="110.0" text="Date" />
+                <TableColumn fx:id="slotCol" prefWidth="150.0" text="Time Slot" />
+                <TableColumn fx:id="statusCol" prefWidth="110.0" text="Status" />
+            </columns>
+        </TableView>
+    </children>
+</AnchorPane>
