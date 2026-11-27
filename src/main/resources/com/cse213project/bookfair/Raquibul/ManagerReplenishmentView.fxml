@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="490.0" prefWidth="740.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1"
+            fx:controller="com.cse213project.bookfair.Raquibul.controller.ManagerReplenishmentController">
+    <children>
+        <Label layoutX="20.0" layoutY="15.0" text="Goal 5: Request Stock Replenishment from Central Warehouse" />
+        <Label fx:id="lowStockLabel" layoutX="20.0" layoutY="48.0" prefWidth="700.0" text="" />
+
+        <Label layoutX="20.0" layoutY="90.0" text="Book ISBN:" />
+        <TextField fx:id="isbnTextField" layoutX="95.0" layoutY="86.0" prefWidth="160.0" text="978-984-02" />
+        <Label layoutX="275.0" layoutY="90.0" text="Restock Qty:" />
+        <TextField fx:id="qtyTextField" layoutX="360.0" layoutY="86.0" prefWidth="90.0" text="20" />
+        <Button layoutX="470.0" layoutY="86.0" prefWidth="150.0" onAction="#dispatchRequisitionButtonOnAction" text="Dispatch Ticket" />
+        <Button layoutX="630.0" layoutY="86.0" prefWidth="90.0" onAction="#backButtonOnAction" text="Back" />
+
+        <TableView fx:id="requestTableView" layoutX="20.0" layoutY="140.0" prefHeight="325.0" prefWidth="700.0">
+            <columns>
+                <TableColumn fx:id="reqIdCol" prefWidth="120.0" text="Request ID" />
+                <TableColumn fx:id="stallCol" prefWidth="115.0" text="Stall No" />
+                <TableColumn fx:id="isbnCol" prefWidth="185.0" text="ISBN" />
+                <TableColumn fx:id="qtyCol" prefWidth="130.0" text="Requested Qty" />
+                <TableColumn fx:id="statusCol" prefWidth="145.0" text="Status" />
+            </columns>
+        </TableView>
+    </children>
+</AnchorPane>
