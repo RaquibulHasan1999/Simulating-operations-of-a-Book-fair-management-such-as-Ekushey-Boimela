@@ -3,7 +3,7 @@ package com.cse213project.bookfair.Raquibul.dummy;
 import java.io.Serializable;
 import java.time.LocalDate;
 
-// Dummy model class for User 7 (Ticket and Parking Management - Nahin Walid Sabith)
+
 public class Ticket implements Serializable {
     private String ticketID;
     private String visitorID;

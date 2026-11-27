@@ -2,7 +2,7 @@ package com.cse213project.bookfair.Raquibul.dummy;
 
 import java.io.Serializable;
 
-// Dummy model class for User 6 (Lost and Found Officer - Ankur Das)
+
 public class LostFoundItem implements Serializable {
     private String itemID;
     private String reportType;

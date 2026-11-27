@@ -18,7 +18,7 @@ public class LoginViewController {
     @FXML private Label statusLabel;
 
     public void initialize() {
-        statusLabel.setText("Demo IDs: V101 (Visitor), M201 (Stall Manager), E301 (Dummy) | PW: 1234");
+        statusLabel.setText("Demo IDs: V101 (Visitor), M201 (Stall Manager) | PW: 1234");
     }
 
     private boolean isValidInput() {

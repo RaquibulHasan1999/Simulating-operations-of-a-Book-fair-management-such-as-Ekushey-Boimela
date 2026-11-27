@@ -2,7 +2,7 @@ package com.cse213project.bookfair.Raquibul.dummy;
 
 import java.io.Serializable;
 
-// Dummy model class for User 4 (Maintenance Officer - Erin Jahan Shovra)
+
 public class InspectionReport implements Serializable {
     private String reportId;
     private String stallId;

@@ -2,7 +2,7 @@ package com.cse213project.bookfair.Raquibul.dummy;
 
 import java.io.Serializable;
 
-// Dummy model class for User 5 (Book Inventory Officer - Ankur Das)
+
 public class StallInventory implements Serializable {
     private String stallNo;
     private String isbn;

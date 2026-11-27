@@ -1,7 +1,6 @@
 package com.cse213project.bookfair.Raquibul.util;
 
 import com.cse213project.bookfair.Raquibul.dummy.Book;
-import com.cse213project.bookfair.Raquibul.dummy.DummyOtherUser;
 import com.cse213project.bookfair.Raquibul.dummy.Event;
 import com.cse213project.bookfair.Raquibul.dummy.LostFoundItem;
 import com.cse213project.bookfair.Raquibul.dummy.ParkingSlot;
@@ -24,19 +23,7 @@ public class DummyDataInitializer {
                     "V101", "raquibul@iub.edu.bd", "Gold"));
             userFile.appendObject(new StallManager("M201", "MD Raquibul Hasan", "01711000002", "1234",
                     "M201", "Prothoma Prokashon", "S-101", "TL-202601"));
-            // Dummy users for other team members
-            userFile.appendObject(new DummyOtherUser("E301", "Erin Jahan Shovra", "01711000003", "1234",
-                    "EventCoordinator", "Erin Jahan Shovra (2310792)"));
-            userFile.appendObject(new DummyOtherUser("MO401", "Erin Jahan Shovra", "01711000004", "1234",
-                    "MaintenanceOfficer", "Erin Jahan Shovra (2310792)"));
-            userFile.appendObject(new DummyOtherUser("B501", "Ankur Das", "01711000005", "1234",
-                    "BookInventoryOfficer", "Ankur Das (2430944)"));
-            userFile.appendObject(new DummyOtherUser("LF601", "Ankur Das", "01711000006", "1234",
-                    "LostAndFoundOfficer", "Ankur Das (2430944)"));
-            userFile.appendObject(new DummyOtherUser("TP701", "Nahin Walid Sabith", "01711000007", "1234",
-                    "TicketAndParkingOfficer", "Nahin Walid Sabith (2311935)"));
-            userFile.appendObject(new DummyOtherUser("RF801", "Nahin Walid Sabith", "01711000008", "1234",
-                    "ReviewAndFeedbackOfficer", "Nahin Walid Sabith (2311935)"));
+
         }
 
         BinaryFileHelper<Stall> stallFile = new BinaryFileHelper<Stall>("Stalls.bin");

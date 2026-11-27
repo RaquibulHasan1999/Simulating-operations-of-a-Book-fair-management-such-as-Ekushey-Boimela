@@ -2,7 +2,7 @@ package com.cse213project.bookfair.Raquibul.dummy;
 
 import java.io.Serializable;
 
-// Dummy model class for User 8 (Review and Feedback Management - Nahin Walid Sabith)
+
 public class Feedback implements Serializable {
     private String feedbackID;
     private String visitorID;

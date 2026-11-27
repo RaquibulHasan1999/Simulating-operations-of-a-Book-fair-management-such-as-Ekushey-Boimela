@@ -86,7 +86,6 @@ public class BinaryFileHelper<E> {
                 list.add(obj);
             }
         } catch (EOFException e) {
-            // End of file reached
         } catch (IOException e) {
             System.out.println("Error reading " + this.fileName + ": " + e.getMessage());
         } catch (ClassNotFoundException e) {

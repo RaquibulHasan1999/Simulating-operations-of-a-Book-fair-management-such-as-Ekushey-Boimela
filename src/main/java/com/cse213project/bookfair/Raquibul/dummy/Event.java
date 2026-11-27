@@ -3,7 +3,7 @@ package com.cse213project.bookfair.Raquibul.dummy;
 import java.io.Serializable;
 import java.time.LocalDate;
 
-// Dummy model class for User 3 (Event Coordinator - Erin Jahan Shovra)
+
 public class Event implements Serializable {
     private String eventId;
     private String title;

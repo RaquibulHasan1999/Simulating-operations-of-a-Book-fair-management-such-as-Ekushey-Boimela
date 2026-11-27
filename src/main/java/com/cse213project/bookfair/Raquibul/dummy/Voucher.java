@@ -2,7 +2,7 @@ package com.cse213project.bookfair.Raquibul.dummy;
 
 import java.io.Serializable;
 
-// Dummy model class for Marketing Officer (M A Musavvir Ahmed)
+
 public class Voucher implements Serializable {
     private String code;
     private double discountPercent;

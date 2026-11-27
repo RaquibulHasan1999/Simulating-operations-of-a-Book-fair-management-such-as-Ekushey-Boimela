@@ -2,7 +2,7 @@ package com.cse213project.bookfair.Raquibul.dummy;
 
 import java.io.Serializable;
 
-// Dummy model class for User 7 (Ticket and Parking Management - Nahin Walid Sabith)
+
 public class ParkingSlot implements Serializable {
     private String slotNumber;
     private boolean isOccupied;

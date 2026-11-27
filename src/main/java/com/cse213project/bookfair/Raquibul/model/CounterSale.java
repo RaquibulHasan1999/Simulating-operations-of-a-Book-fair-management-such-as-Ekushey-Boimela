@@ -36,7 +36,6 @@ public class CounterSale implements Serializable {
     }
 
     public double calculateTotal() {
-        // 25% standard Ekushey Boimela fair discount
         double gross = this.quantity * this.unitPrice;
         double fairDiscount = gross * 0.25;
         this.totalAmount = gross - fairDiscount;
