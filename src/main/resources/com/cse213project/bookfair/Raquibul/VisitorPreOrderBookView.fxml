@@ -10,7 +10,7 @@
 <AnchorPane prefHeight="540.0" prefWidth="760.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1"
             fx:controller="com.cse213project.bookfair.Raquibul.controller.VisitorPreOrderBookController">
     <children>
-        <Label layoutX="20.0" layoutY="15.0" text="Goal 2: Pre-Order Books (Demo ISBN: 978-984-01, Stall: S-101)" />
+        <Label layoutX="20.0" layoutY="15.0" text="Pre-Order Books (Demo ISBN: 978-984-01, Stall: S-101)" />
 
         <Label layoutX="20.0" layoutY="50.0" text="Stall No:" />
         <TextField fx:id="stallNoTextField" layoutX="85.0" layoutY="46.0" prefWidth="110.0" text="S-101" />

@@ -7,14 +7,14 @@
             fx:controller="com.cse213project.bookfair.Raquibul.controller.StallManagerDashboardController">
     <children>
         <Label fx:id="welcomeLabel" layoutX="40.0" layoutY="25.0" text="Stall Manager Dashboard" />
-        <Button layoutX="40.0" layoutY="80.0" prefWidth="280.0" onAction="#openApplyStallOnAction" text="Goal 1: Apply for Stall Allocation" />
-        <Button layoutX="360.0" layoutY="80.0" prefWidth="280.0" onAction="#openUpdateInventoryOnAction" text="Goal 2: Update Inventory &amp; Book Catalog" />
-        <Button layoutX="40.0" layoutY="140.0" prefWidth="280.0" onAction="#openCounterSalesOnAction" text="Goal 3: Counter Sales &amp; Pre-Order Pickup" />
-        <Button layoutX="360.0" layoutY="140.0" prefWidth="280.0" onAction="#openStaffPassOnAction" text="Goal 4: Manage Staff Attendant Passes" />
-        <Button layoutX="40.0" layoutY="200.0" prefWidth="280.0" onAction="#openReplenishmentOnAction" text="Goal 5: Request Stock Replenishment" />
-        <Button layoutX="360.0" layoutY="200.0" prefWidth="280.0" onAction="#openBookLaunchOnAction" text="Goal 6: Organize Book Launch Event" />
-        <Button layoutX="40.0" layoutY="260.0" prefWidth="280.0" onAction="#openFinancialAnalyticsOnAction" text="Goal 7: View Stall Financial Analytics" />
-        <Button layoutX="360.0" layoutY="260.0" prefWidth="280.0" onAction="#openUtilityComplaintOnAction" text="Goal 8: Submit Utility / Security Complaint" />
+        <Button layoutX="40.0" layoutY="80.0" prefWidth="280.0" onAction="#openApplyStallOnAction" text="Apply for Stall Allocation" />
+        <Button layoutX="360.0" layoutY="80.0" prefWidth="280.0" onAction="#openUpdateInventoryOnAction" text="Update Inventory &amp; Book Catalog" />
+        <Button layoutX="40.0" layoutY="140.0" prefWidth="280.0" onAction="#openCounterSalesOnAction" text="Counter Sales &amp; Pre-Order Pickup" />
+        <Button layoutX="360.0" layoutY="140.0" prefWidth="280.0" onAction="#openStaffPassOnAction" text="Manage Staff Attendant Passes" />
+        <Button layoutX="40.0" layoutY="200.0" prefWidth="280.0" onAction="#openReplenishmentOnAction" text="Request Stock Replenishment" />
+        <Button layoutX="360.0" layoutY="200.0" prefWidth="280.0" onAction="#openBookLaunchOnAction" text="Organize Book Launch Event" />
+        <Button layoutX="40.0" layoutY="260.0" prefWidth="280.0" onAction="#openFinancialAnalyticsOnAction" text="View Stall Financial Analytics" />
+        <Button layoutX="360.0" layoutY="260.0" prefWidth="280.0" onAction="#openUtilityComplaintOnAction" text="Submit Utility / Security Complaint" />
         <Button layoutX="280.0" layoutY="360.0" prefWidth="120.0" onAction="#signOutButtonOnAction" text="Sign Out" />
     </children>
 </AnchorPane>

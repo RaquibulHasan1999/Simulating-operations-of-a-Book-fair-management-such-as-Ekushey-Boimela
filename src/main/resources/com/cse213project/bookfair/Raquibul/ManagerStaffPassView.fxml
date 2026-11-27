@@ -10,7 +10,7 @@
 <AnchorPane prefHeight="520.0" prefWidth="760.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1"
             fx:controller="com.cse213project.bookfair.Raquibul.controller.ManagerStaffPassController">
     <children>
-        <Label layoutX="20.0" layoutY="15.0" text="Goal 4: Manage Stall Attendant Staff Passes (Quota: Max 5 Active)" />
+        <Label layoutX="20.0" layoutY="15.0" text="Manage Stall Attendant Staff Passes (Quota: Max 5 Active)" />
 
         <Label layoutX="20.0" layoutY="55.0" text="Staff Name:" />
         <TextField fx:id="staffNameTextField" layoutX="95.0" layoutY="51.0" prefWidth="170.0" />

@@ -10,7 +10,7 @@
 <AnchorPane prefHeight="520.0" prefWidth="760.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1"
             fx:controller="com.cse213project.bookfair.Raquibul.controller.ManagerApplyStallController">
     <children>
-        <Label layoutX="20.0" layoutY="15.0" text="Goal 1: Apply for Fair Stall Allocation" />
+        <Label layoutX="20.0" layoutY="15.0" text="Apply for Fair Stall Allocation" />
         <Label layoutX="20.0" layoutY="55.0" text="Stall Type:" />
         <ComboBox fx:id="stallTypeComboBox" layoutX="95.0" layoutY="51.0" prefWidth="130.0" />
         <Label layoutX="245.0" layoutY="55.0" text="Preferred Zone:" />

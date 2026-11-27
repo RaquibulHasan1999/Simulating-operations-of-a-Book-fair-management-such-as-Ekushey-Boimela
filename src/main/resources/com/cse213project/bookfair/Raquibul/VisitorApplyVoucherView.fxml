@@ -9,7 +9,7 @@
 <AnchorPane prefHeight="480.0" prefWidth="740.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1"
             fx:controller="com.cse213project.bookfair.Raquibul.controller.VisitorApplyVoucherController">
     <children>
-        <Label layoutX="20.0" layoutY="18.0" text="Goal 7: Apply Discount / Promo Voucher Code (Demo Codes: BOIMELA10, EKUSHEY20)" />
+        <Label layoutX="20.0" layoutY="18.0" text="Apply Discount / Promo Voucher Code (Demo Codes: BOIMELA10, EKUSHEY20)" />
         <TableView fx:id="orderTableView" layoutX="20.0" layoutY="55.0" prefHeight="270.0" prefWidth="700.0">
             <columns>
                 <TableColumn fx:id="orderIdCol" prefWidth="120.0" text="Order ID" />

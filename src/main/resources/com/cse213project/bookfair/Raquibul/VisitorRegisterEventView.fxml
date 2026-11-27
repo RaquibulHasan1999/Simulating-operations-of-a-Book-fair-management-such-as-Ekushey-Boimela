@@ -8,7 +8,7 @@
 <AnchorPane prefHeight="480.0" prefWidth="740.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1"
             fx:controller="com.cse213project.bookfair.Raquibul.controller.VisitorRegisterEventController">
     <children>
-        <Label layoutX="20.0" layoutY="20.0" text="Goal 3: Register for Author Meet &amp; Greet / Book Launch Sessions" />
+        <Label layoutX="20.0" layoutY="20.0" text="Register for Author Meet &amp; Greet / Book Launch Sessions" />
         <TableView fx:id="eventTableView" layoutX="20.0" layoutY="60.0" prefHeight="290.0" prefWidth="700.0">
             <columns>
                 <TableColumn fx:id="eventIdCol" prefWidth="95.0" text="Event ID" />

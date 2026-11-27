@@ -9,7 +9,7 @@
 <AnchorPane prefHeight="500.0" prefWidth="760.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1"
             fx:controller="com.cse213project.bookfair.Raquibul.controller.ManagerFinancialAnalyticsController">
     <children>
-        <Label layoutX="20.0" layoutY="15.0" text="Goal 7: View Daily Stall Financial Analytics &amp; Sales Performance" />
+        <Label layoutX="20.0" layoutY="15.0" text="View Daily Stall Financial Analytics &amp; Sales Performance" />
 
         <Label layoutX="20.0" layoutY="55.0" text="From Date:" />
         <DatePicker fx:id="fromDatePicker" layoutX="95.0" layoutY="51.0" prefWidth="140.0" />

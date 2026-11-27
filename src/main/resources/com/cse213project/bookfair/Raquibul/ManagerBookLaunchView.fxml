@@ -11,7 +11,7 @@
 <AnchorPane prefHeight="520.0" prefWidth="760.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1"
             fx:controller="com.cse213project.bookfair.Raquibul.controller.ManagerBookLaunchController">
     <children>
-        <Label layoutX="20.0" layoutY="15.0" text="Goal 6: Organize New Book Launch Event (Operational Dates: Feb 1 - Feb 28, 2026)" />
+        <Label layoutX="20.0" layoutY="15.0" text="Organize New Book Launch Event (Operational Dates: Feb 1 - Feb 28, 2026)" />
 
         <Label layoutX="20.0" layoutY="55.0" text="Book Title:" />
         <TextField fx:id="bookTitleTextField" layoutX="95.0" layoutY="51.0" prefWidth="240.0" />

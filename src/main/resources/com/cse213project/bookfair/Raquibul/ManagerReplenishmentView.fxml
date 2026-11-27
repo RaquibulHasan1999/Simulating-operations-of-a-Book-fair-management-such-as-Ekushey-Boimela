@@ -9,7 +9,7 @@
 <AnchorPane prefHeight="490.0" prefWidth="740.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1"
             fx:controller="com.cse213project.bookfair.Raquibul.controller.ManagerReplenishmentController">
     <children>
-        <Label layoutX="20.0" layoutY="15.0" text="Goal 5: Request Stock Replenishment from Central Warehouse" />
+        <Label layoutX="20.0" layoutY="15.0" text="Request Stock Replenishment from Central Warehouse" />
         <Label fx:id="lowStockLabel" layoutX="20.0" layoutY="48.0" prefWidth="700.0" text="" />
 
         <Label layoutX="20.0" layoutY="90.0" text="Book ISBN:" />

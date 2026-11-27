@@ -10,7 +10,7 @@
 <AnchorPane prefHeight="540.0" prefWidth="760.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1"
             fx:controller="com.cse213project.bookfair.Raquibul.controller.VisitorLostFoundController">
     <children>
-        <Label layoutX="20.0" layoutY="15.0" text="Goal 6: Report Lost &amp; Found Items / Submit Ownership Claim" />
+        <Label layoutX="20.0" layoutY="15.0" text="Report Lost &amp; Found Items / Submit Ownership Claim" />
 
         <Label layoutX="20.0" layoutY="50.0" text="Type:" />
         <ComboBox fx:id="reportTypeComboBox" layoutX="65.0" layoutY="46.0" prefWidth="120.0" />

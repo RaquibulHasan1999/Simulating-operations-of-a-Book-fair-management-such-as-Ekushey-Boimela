@@ -7,14 +7,14 @@
             fx:controller="com.cse213project.bookfair.Raquibul.controller.GeneralVisitorDashboardController">
     <children>
         <Label fx:id="welcomeLabel" layoutX="40.0" layoutY="25.0" text="General Visitor Dashboard" />
-        <Button layoutX="40.0" layoutY="80.0" prefWidth="280.0" onAction="#openSearchBooksOnAction" text="Goal 1: Search Books, Authors &amp; Stalls" />
-        <Button layoutX="360.0" layoutY="80.0" prefWidth="280.0" onAction="#openPreOrderBookOnAction" text="Goal 2: Pre-Order Books" />
-        <Button layoutX="40.0" layoutY="140.0" prefWidth="280.0" onAction="#openRegisterEventOnAction" text="Goal 3: Register for Events &amp; Launches" />
-        <Button layoutX="360.0" layoutY="140.0" prefWidth="280.0" onAction="#openSubmitReviewOnAction" text="Goal 4: Submit Book Reviews &amp; Ratings" />
-        <Button layoutX="40.0" layoutY="200.0" prefWidth="280.0" onAction="#openBuyEntryPassOnAction" text="Goal 5: Purchase Fair Entry Pass" />
-        <Button layoutX="360.0" layoutY="200.0" prefWidth="280.0" onAction="#openLostFoundOnAction" text="Goal 6: Report / Claim Lost &amp; Found" />
-        <Button layoutX="40.0" layoutY="260.0" prefWidth="280.0" onAction="#openApplyVoucherOnAction" text="Goal 7: Apply Discount Voucher Code" />
-        <Button layoutX="360.0" layoutY="260.0" prefWidth="280.0" onAction="#openFeedbackHelplineOnAction" text="Goal 8: Feedback / Emergency Helpline" />
+        <Button layoutX="40.0" layoutY="80.0" prefWidth="280.0" onAction="#openSearchBooksOnAction" text="Search Books, Authors &amp; Stalls" />
+        <Button layoutX="360.0" layoutY="80.0" prefWidth="280.0" onAction="#openPreOrderBookOnAction" text="Pre-Order Books" />
+        <Button layoutX="40.0" layoutY="140.0" prefWidth="280.0" onAction="#openRegisterEventOnAction" text="Register for Events &amp; Launches" />
+        <Button layoutX="360.0" layoutY="140.0" prefWidth="280.0" onAction="#openSubmitReviewOnAction" text="Submit Book Reviews &amp; Ratings" />
+        <Button layoutX="40.0" layoutY="200.0" prefWidth="280.0" onAction="#openBuyEntryPassOnAction" text="Purchase Fair Entry Pass" />
+        <Button layoutX="360.0" layoutY="200.0" prefWidth="280.0" onAction="#openLostFoundOnAction" text="Report / Claim Lost &amp; Found" />
+        <Button layoutX="40.0" layoutY="260.0" prefWidth="280.0" onAction="#openApplyVoucherOnAction" text="Apply Discount Voucher Code" />
+        <Button layoutX="360.0" layoutY="260.0" prefWidth="280.0" onAction="#openFeedbackHelplineOnAction" text="Feedback / Emergency Helpline" />
         <Button layoutX="280.0" layoutY="360.0" prefWidth="120.0" onAction="#signOutButtonOnAction" text="Sign Out" />
     </children>
 </AnchorPane>

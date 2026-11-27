@@ -11,7 +11,7 @@
 <AnchorPane prefHeight="500.0" prefWidth="740.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1"
             fx:controller="com.cse213project.bookfair.Raquibul.controller.VisitorBuyEntryPassController">
     <children>
-        <Label layoutX="20.0" layoutY="18.0" text="Goal 5: Purchase Online Fair Entry Pass &amp; Parking" />
+        <Label layoutX="20.0" layoutY="18.0" text="Purchase Online Fair Entry Pass &amp; Parking" />
         <Label layoutX="20.0" layoutY="60.0" text="Pass Type:" />
         <ComboBox fx:id="passTypeComboBox" layoutX="95.0" layoutY="56.0" prefWidth="180.0" />
         <Label layoutX="295.0" layoutY="60.0" text="Visit Date:" />
