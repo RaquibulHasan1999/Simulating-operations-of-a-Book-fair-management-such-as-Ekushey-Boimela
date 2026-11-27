@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="520.0" prefWidth="760.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1"
+            fx:controller="com.cse213project.bookfair.Raquibul.controller.VisitorSearchBooksController">
+    <children>
+        <Label layoutX="20.0" layoutY="18.0" text="Goal 1: Search Books, Authors &amp; Stall Locations" />
+        <Label layoutX="20.0" layoutY="55.0" text="Keyword:" />
+        <TextField fx:id="keywordTextField" layoutX="85.0" layoutY="51.0" prefWidth="150.0" />
+        <Label layoutX="250.0" layoutY="55.0" text="Filter By:" />
+        <ComboBox fx:id="filterByComboBox" layoutX="310.0" layoutY="51.0" prefWidth="110.0" />
+        <Label layoutX="435.0" layoutY="55.0" text="Min:" />
+        <TextField fx:id="minPriceTextField" layoutX="468.0" layoutY="51.0" prefWidth="65.0" />
+        <Label layoutX="542.0" layoutY="55.0" text="Max:" />
+        <TextField fx:id="maxPriceTextField" layoutX="578.0" layoutY="51.0" prefWidth="65.0" />
+        <Button layoutX="655.0" layoutY="51.0" prefWidth="85.0" onAction="#searchButtonOnAction" text="Search" />
+
+        <TableView fx:id="bookTableView" layoutX="20.0" layoutY="95.0" prefHeight="290.0" prefWidth="720.0">
+            <columns>
+                <TableColumn fx:id="isbnCol" prefWidth="115.0" text="ISBN" />
+                <TableColumn fx:id="titleCol" prefWidth="185.0" text="Title" />
+                <TableColumn fx:id="authorCol" prefWidth="170.0" text="Author" />
+                <TableColumn fx:id="publisherCol" prefWidth="150.0" text="Publisher" />
+                <TableColumn fx:id="priceCol" prefWidth="95.0" text="Price (BDT)" />
+            </columns>
+        </TableView>
+
+        <Button layoutX="20.0" layoutY="400.0" onAction="#viewDetailsButtonOnAction" text="Show Selected Book &amp; Stall Details" />
+        <Button layoutX="640.0" layoutY="400.0" prefWidth="100.0" onAction="#backButtonOnAction" text="Back" />
+        <Label fx:id="detailLabel" layoutX="20.0" layoutY="445.0" prefWidth="720.0" wrapText="true" text="Select a book and click Show Details." />
+    </children>
+</AnchorPane>
