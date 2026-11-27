@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="500.0" prefWidth="740.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1"
+            fx:controller="com.cse213project.bookfair.Raquibul.controller.VisitorSubmitReviewController">
+    <children>
+        <Label layoutX="20.0" layoutY="18.0" text="Goal 4: Submit Book Reviews &amp; Ratings (Fulfilled Purchases Only)" />
+        <Label layoutX="20.0" layoutY="58.0" text="Purchased Book ISBN:" />
+        <ComboBox fx:id="fulfilledBookComboBox" layoutX="160.0" layoutY="54.0" prefWidth="160.0" />
+        <Label layoutX="350.0" layoutY="58.0" text="Star Rating (1-5):" />
+        <ComboBox fx:id="ratingComboBox" layoutX="465.0" layoutY="54.0" prefWidth="90.0" />
+
+        <Label layoutX="20.0" layoutY="100.0" text="Review Text (&lt;=500 chars):" />
+        <TextField fx:id="reviewTextField" layoutX="180.0" layoutY="96.0" prefWidth="540.0" />
+
+        <Button layoutX="20.0" layoutY="140.0" prefWidth="150.0" onAction="#submitReviewButtonOnAction" text="Submit Review" />
+        <Button layoutX="620.0" layoutY="140.0" prefWidth="100.0" onAction="#backButtonOnAction" text="Back" />
+
+        <Label fx:id="averageRatingLabel" layoutX="20.0" layoutY="180.0" prefWidth="700.0" text="" />
+
+        <TableView fx:id="reviewTableView" layoutX="20.0" layoutY="210.0" prefHeight="265.0" prefWidth="700.0">
+            <columns>
+                <TableColumn fx:id="reviewIdCol" prefWidth="105.0" text="Review ID" />
+                <TableColumn fx:id="targetIdCol" prefWidth="140.0" text="Book ISBN" />
+                <TableColumn fx:id="ratingCol" prefWidth="80.0" text="Rating" />
+                <TableColumn fx:id="commentCol" prefWidth="370.0" text="Comment" />
+            </columns>
+        </TableView>
+    </children>
+</AnchorPane>
