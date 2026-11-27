@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="540.0" prefWidth="760.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1"
+            fx:controller="com.cse213project.bookfair.Raquibul.controller.VisitorPreOrderBookController">
+    <children>
+        <Label layoutX="20.0" layoutY="15.0" text="Goal 2: Pre-Order Books (Demo ISBN: 978-984-01, Stall: S-101)" />
+
+        <Label layoutX="20.0" layoutY="50.0" text="Stall No:" />
+        <TextField fx:id="stallNoTextField" layoutX="85.0" layoutY="46.0" prefWidth="110.0" text="S-101" />
+        <Label layoutX="210.0" layoutY="50.0" text="Book ISBN:" />
+        <TextField fx:id="isbnTextField" layoutX="285.0" layoutY="46.0" prefWidth="140.0" text="978-984-01" />
+        <Label layoutX="445.0" layoutY="50.0" text="Qty:" />
+        <TextField fx:id="quantityTextField" layoutX="480.0" layoutY="46.0" prefWidth="60.0" text="1" />
+        <Label layoutX="555.0" layoutY="50.0" text="Pickup:" />
+        <ComboBox fx:id="pickupOptionComboBox" layoutX="605.0" layoutY="46.0" prefWidth="135.0" />
+
+        <Label layoutX="20.0" layoutY="90.0" text="Address:" />
+        <TextField fx:id="addressTextField" layoutX="85.0" layoutY="86.0" prefWidth="240.0" text="Bashundhara R/A, Dhaka" />
+        <Label layoutX="340.0" layoutY="90.0" text="Phone (11 digits):" />
+        <TextField fx:id="phoneTextField" layoutX="450.0" layoutY="86.0" prefWidth="130.0" text="01711000001" />
+        <ComboBox fx:id="paymentMethodComboBox" layoutX="595.0" layoutY="86.0" prefWidth="145.0" />
+
+        <Button layoutX="20.0" layoutY="130.0" prefWidth="180.0" onAction="#confirmPreOrderButtonOnAction" text="Confirm Pre-Order" />
+        <Button layoutX="220.0" layoutY="130.0" prefWidth="180.0" onAction="#cancelSelectedOrderButtonOnAction" text="Cancel Selected Order" />
+        <Button layoutX="640.0" layoutY="130.0" prefWidth="100.0" onAction="#backButtonOnAction" text="Back" />
+
+        <Label fx:id="outputLabel" layoutX="20.0" layoutY="170.0" prefWidth="720.0" text="" />
+
+        <TableView fx:id="preOrderTableView" layoutX="20.0" layoutY="205.0" prefHeight="310.0" prefWidth="720.0">
+            <columns>
+                <TableColumn fx:id="orderIdCol" prefWidth="105.0" text="Order ID" />
+                <TableColumn fx:id="isbnCol" prefWidth="135.0" text="ISBN" />
+                <TableColumn fx:id="qtyCol" prefWidth="70.0" text="Qty" />
+                <TableColumn fx:id="totalCol" prefWidth="115.0" text="Total (BDT)" />
+                <TableColumn fx:id="pickupCodeCol" prefWidth="140.0" text="Pickup Code" />
+                <TableColumn fx:id="statusCol" prefWidth="150.0" text="Status" />
+            </columns>
+        </TableView>
+    </children>
+</AnchorPane>
